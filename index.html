@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hum</title>
+<meta name="description" content="hum is a personal assistant that one person runs on their own computer for their own email, calendar and tasks.">
+<style>
+  :root { --bg: #fbfaf8; --text: #1d1d1b; --muted: #5d5b56; --rule: #e4e1da; --link: #2f5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --text: #ecebe7; --muted: #a3a19b; --rule: #2e2d2a; --link: #8db7e0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin: 0 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  ul { padding-left: 20px; }
+  a { color: var(--link); }
+  footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 16px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>hum</h1>
+  <p class="lead">A personal assistant that one person runs on their own computer, for their own email, calendar and tasks.</p>
+
+  <p>hum watches its owner's inbox, calendar and task tracker, notices what needs attention, and writes a short daily brief. When something needs doing, it proposes a plan and asks before it acts. Every action that reaches another person waits for the owner's approval.</p>
+
+  <h2>Who can use it</h2>
+  <p>Only its owner. hum is not a hosted service: there is no sign-up and no account, and no one else can connect to it. It runs on the owner's machine and talks to the owner's own accounts.</p>
+
+  <h2>What it connects to</h2>
+  <ul>
+    <li><strong>Gmail</strong>: reads the sender, recipients, subject, labels and Gmail's short preview of inbox threads. It changes a thread's labels, for example to archive it, only when the owner approves.</li>
+    <li><strong>Google Calendar</strong>: reads events, read-only.</li>
+    <li><strong>ClickUp</strong>: reads the owner's tasks.</li>
+    <li><strong>Telegram</strong>: sends the daily brief and approval requests to the owner's own chat.</li>
+    <li><strong>Claude</strong>: Anthropic's models decide what matters and draft plans.</li>
+  </ul>
+
+  <p>How hum handles this data is in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>hum · <a href="privacy.html">Privacy policy</a> · <a href="https://github.com/simplycodepix">Contact</a></footer>
+</main>
+</body>
+</html>

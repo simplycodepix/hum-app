@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hum privacy policy</title>
+<meta name="description" content="How hum, a single-user personal assistant, handles Gmail, Google Calendar and other account data.">
+<style>
+  :root { --bg: #fbfaf8; --text: #1d1d1b; --muted: #5d5b56; --rule: #e4e1da; --link: #2f5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --text: #ecebe7; --muted: #a3a19b; --rule: #2e2d2a; --link: #8db7e0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  ul { padding-left: 20px; }
+  a { color: var(--link); }
+  footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 16px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lead">hum · effective 9 October 2026</p>
+
+  <p>hum is a personal assistant that one person, its owner, runs on their own computer for their own accounts. It is not offered to anyone else. This policy covers what hum reads, where that data goes, and how to remove it.</p>
+
+  <h2>Data hum reads from Google</h2>
+  <ul>
+    <li><strong>Gmail</strong> (scope <code>gmail.modify</code>): for threads in the inbox, the sender, recipients, subject, labels and Gmail's short preview snippet. hum does not download full message bodies or attachments. It adds or removes a thread's labels, for example to archive it, only when the owner approves that action or has explicitly allowed it. hum never sends, forwards or deletes email.</li>
+    <li><strong>Google Calendar</strong> (scope <code>calendar.readonly</code>): event times, titles, locations, organizers, attendees and the owner's own response, for the days around today. hum never changes the calendar.</li>
+  </ul>
+
+  <h2>Where the data is kept</h2>
+  <p>In a database file on the owner's computer. hum has no server, no user accounts and no analytics. Nothing is sold, used for advertising, or shared beyond the services below.</p>
+
+  <h2>Services that receive data</h2>
+  <ul>
+    <li><strong>Anthropic</strong>: hum sends selected email metadata, calendar events and tasks to Anthropic's Claude models. They decide what needs attention and draft plans for the owner to approve. These calls run through Anthropic's API under the owner's API key, and through Claude Code under the owner's own Claude account.</li>
+    <li><strong>Telegram</strong>: the daily brief and approval requests, which can include email subjects and senders, go to the owner's own chat with the owner's bot.</li>
+    <li><strong>ClickUp</strong>: hum reads the owner's tasks. It comments on a task or creates one only after the owner approves.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>hum's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide hum's features to its owner. It is not used for advertising, not sold, not read by anyone other than the owner, and not used to develop, improve or train generalized AI or machine learning models.</p>
+
+  <h2>Removing access and data</h2>
+  <p>The owner can revoke hum's Google access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and deletes all stored data by deleting hum's database file.</p>
+
+  <h2>Contact</h2>
+  <p>Questions go to the owner through <a href="https://github.com/simplycodepix">GitHub</a> or the support email shown on Google's consent screen.</p>
+
+  <footer><a href="index.html">hum</a> · Privacy policy</footer>
+</main>
+</body>
+</html>
